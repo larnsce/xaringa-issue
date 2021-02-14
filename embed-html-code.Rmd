@@ -10,6 +10,25 @@ output:
       countIncrementalSlides: false
 ---
 
+## Session Info 1
+
+```{r}
+
+sessioninfo::platform_info()
+
+```
+
+
+---
+## Session Info 2
+
+```{r}
+
+sessioninfo::package_info()
+
+```
+
+
 # Icon in code chunk
 
 The code chunk prints the html code instead of embedding the icon and adds `{=html}`.
