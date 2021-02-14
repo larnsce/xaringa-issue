@@ -1,0 +1,42 @@
+---
+title: "Embed HTML code in slides"
+author: "Lars"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Icon in code chunk
+
+The code chunk prints the html code instead of embedding the icon and adds `{=html}`.
+
+```{r}
+icon::fa_git(size = 5)
+```
+
+---
+# Icon as HTML code
+
+Here I pasted `<i class="fab fa-git fa-5x "></i>` without the `{=html}`
+
+<i class="fab fa-git fa-5x "></i>
+
+---
+# Using htmltools
+
+I have the same problem when using {htmltools} builder functions.
+
+```{r}
+library(htmltools)
+
+p(rmarkdown::metadata$author)
+
+```
+
+Here I use r code inline: `h1("heading")`
+
+`r h1("heading 1")`
