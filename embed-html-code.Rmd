@@ -28,7 +28,7 @@ sessioninfo::package_info()
 
 ```
 
-
+---
 # Icon in code chunk
 
 The code chunk prints the html code instead of embedding the icon and adds `{=html}`.
